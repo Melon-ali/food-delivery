@@ -1,0 +1,10 @@
+.service {
+  border-radius: 20px;
+}
+.card img {
+  width: 100%;
+}
+.btn {
+  background-image: linear-gradient(orange, tomato);
+  color: #e02c6d;
+}

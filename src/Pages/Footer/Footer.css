@@ -1,0 +1,17 @@
+.hover {
+  font-size: 30px;
+  transition: 1s;
+}
+.hover:hover {
+  color: #d8ab37;
+  cursor: pointer;
+}
+h3 .spa {
+  color: #d8ab37;
+}
+.title {
+  color: #d8ab37;
+}
+.bg-footer {
+  background-color: #040203;
+}
