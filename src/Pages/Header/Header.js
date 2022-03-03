@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css';
 import { Container, Navbar } from 'react-bootstrap'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -11,9 +11,9 @@ export default function Header() {
                     <Navbar.Brand to="/home"><img src="https://i.ibb.co/y06j4Zf/logo.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        {/* <Link className="link" to="/home">Home</Link>
+                        <Link className="link" to="/home">Home</Link>
                         <Link className="link" to="/services">Services</Link>
-                        <Link className="link" to="/addService">Add Service</Link>
+                        {/* <Link className="link" to="/addService">Add Service</Link>
                         <Link className="link" to="/manageServices">Manage Services</Link> */}
                         {/* {user?.email ?
                             <Button onClick={logOut} variant="light">Logout</Button>:

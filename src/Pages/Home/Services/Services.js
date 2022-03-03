@@ -5,7 +5,7 @@ import './Services.css';
 export default function Services() {
     const [services, setServices] = useState([])
     useEffect(()=> {
-        fetch('./fakas.JSON')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setServices(data));
     } ,[])
