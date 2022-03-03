@@ -1,11 +1,15 @@
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import AuthProvider from './context/AuthProvider';
 import AddService from './Pages/AddService/AddService';
+import Details from './Pages/Details/Details/Details';
 import Footer from './Pages/Header/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
+import Login from './Pages/Login/Login/Login';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ManageServices from './Pages/ManageServices/ManageServices';
 import NotFound from './Pages/NotFound/NotFound';
 
@@ -13,7 +17,7 @@ import NotFound from './Pages/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
-      {/* <AuthProvider> */}
+      <AuthProvider>
         <Router>
           <Header></Header>
           <Switch>
@@ -26,12 +30,12 @@ function App() {
             <Route exact path="/services">
               <Services></Services>
             </Route>
-            {/* <Route exact path="/login">
+            <Route exact path="/login">
               <Login></Login>
             </Route>
             <PrivateRoute path="/details/:serviceId">
               <Details></Details>
-            </PrivateRoute> */}
+            </PrivateRoute>
             <Route path="/addService">
               <AddService></AddService>
             </Route>
@@ -44,7 +48,7 @@ function App() {
           </Switch>
           <Footer></Footer>
         </Router>
-      {/* </AuthProvider> */}
+      </AuthProvider>
     </div>
   );
 }
