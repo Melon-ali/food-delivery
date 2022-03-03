@@ -13,8 +13,8 @@ export default function Header() {
                     <Navbar.Collapse className="justify-content-end">
                         <Link className="link" to="/home">Home</Link>
                         <Link className="link" to="/services">Services</Link>
-                        {/* <Link className="link" to="/addService">Add Service</Link>
-                        <Link className="link" to="/manageServices">Manage Services</Link> */}
+                        <Link className="link" to="/addService">Add Service</Link>
+                        <Link className="link" to="/manageServices">Manage Services</Link>
                         {/* {user?.email ?
                             <Button onClick={logOut} variant="light">Logout</Button>:
                             <Link className="link" to="/login">Login</Link>}

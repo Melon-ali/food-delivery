@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Service.css';
 
 export default function Service(props) {
-    const { name, description, img, price} = props.service;
+    const { _id, name, description, img, price} = props.service;
   return (
     <div>
         <div className="">
@@ -13,9 +14,9 @@ export default function Service(props) {
                     <p class="card-text px-2">{description}</p>
                     <div className="d-flex bd-highlight">
                         <div className=" flex-grow-1 bd-highlight">
-                            {/* <Link to={`/details/${_id}`}>
-                                <button className="btn">Read More</button>
-                            </Link> */}
+                            <Link to={`/details/${_id}`}>
+                                <button className="btn text-light">Add To Cart</button>
+                            </Link>
                         </div>
                         <div className=" flex-grow-1 bd-highlight"><h3>$ {[price]}</h3></div>
                     </div>

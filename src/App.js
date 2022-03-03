@@ -1,10 +1,13 @@
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import AddService from './Pages/AddService/AddService';
 import Footer from './Pages/Header/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
+import ManageServices from './Pages/ManageServices/ManageServices';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -28,7 +31,7 @@ function App() {
             </Route>
             <PrivateRoute path="/details/:serviceId">
               <Details></Details>
-            </PrivateRoute>
+            </PrivateRoute> */}
             <Route path="/addService">
               <AddService></AddService>
             </Route>
@@ -37,7 +40,7 @@ function App() {
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>
-            </Route> */}
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>
