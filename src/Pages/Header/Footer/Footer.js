@@ -4,7 +4,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <div className="container-fluid">
-      <div className="row bg-footer text-white p-3 mt-5 overflow-hidden">
+      <div className="row bg-footer text-white p-3 overflow-hidden">
         <div className="col-lg-4 col-12 overflow-hidden">
         <img src="https://i.ibb.co/y06j4Zf/logo.png" alt="" />
           <h4>Latest <span className="title">Posts</span></h4>

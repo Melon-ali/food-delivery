@@ -7,7 +7,7 @@ export default function AddService() {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://shielded-hollows-98040.herokuapp.com/services', data)
         .then(res => {
             if(res.data.insertedId) {
                 alert('Added Successfully');
